@@ -1,5 +1,7 @@
 package Esercizio2;
 
+import java.util.Scanner;
+
 public class switchEx {
     public static void stampInLetters(int numero) {
         switch (numero) {
@@ -24,7 +26,12 @@ public class switchEx {
 
 
     public static void main(String[] args) {
-        stampInLetters(36);
-        stampInLetters(2);
+        Scanner myScanner = new Scanner (System.in);
+        System.out.println("Inserisci un numero");
+        int numero = myScanner.nextInt();
+
+        stampInLetters(numero);
+        myScanner.close();
+        ;
     }
 }
